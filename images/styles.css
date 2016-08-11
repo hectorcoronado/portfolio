@@ -42,7 +42,7 @@ a:active {
 
 
 nav.top-nav, footer.page-footer {
-  box-shadow: 2;
+  box-shadow: 3;
   background-color: #D9D9D9;
   border-top: solid #C1F0EF;
   color: #000000;
