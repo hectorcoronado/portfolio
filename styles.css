@@ -35,7 +35,8 @@ a:active {
   color: #000000;
 }
 
-nav.top-nav, footer.page-footer {
+nav.top-nav,
+footer.page-footer {
   box-shadow: 2;
   background-color: #D9D9D9;
   border-top: 1px solid #A32A2A;
@@ -50,7 +51,11 @@ nav.top-nav {
   height: 240px;
   }
 
-h1.brand-logo, footer.page-footer, .category, #nav-mobile, #mobile-demo {
+h1.brand-logo,
+footer.page-footer,
+.category,
+#nav-mobile,
+#mobile-demo {
   font-family: 'Inconsolata', monospace;
   font-family: 'Moon Light', monospace;
 }
