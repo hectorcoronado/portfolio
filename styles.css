@@ -23,9 +23,9 @@ main {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*p.flow-text {
+p.flow-text {
   font-size: 1rem;
-}*/
+}
 
 a:active {
   top: 1px;
