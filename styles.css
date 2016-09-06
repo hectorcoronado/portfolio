@@ -23,9 +23,9 @@ main {
   font-family: 'Open Sans', sans-serif;
 }
 
-p.flow-text {
+/*p.flow-text {
   font-size: 1rem;
-}
+}*/
 
 a:active {
   top: 1px;
@@ -75,6 +75,10 @@ h2.category {
   font-size: 35px;
   font-weight: bolder;
   color: #A32A2A;
+}
+
+footer.page-footer {
+  font-size: 1.1vmax;
 }
 
 .divisor {
