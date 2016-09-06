@@ -63,7 +63,7 @@ footer.page-footer,
 h1.brand-logo {
   height: 100px;
   line-height: 100px;
-  font-size: 3.2rem;
+  font-size: 3.6vw;
   margin-top: 60px;
   font-family: 'Moon Bold', monospace;
   color: #1B3E61;
@@ -75,6 +75,10 @@ h2.category {
   font-size: 35px;
   font-weight: bolder;
   color: #A32A2A;
+}
+
+footer.page-footer {
+  font-size: 1.1vmax;
 }
 
 .divisor {
