@@ -14,6 +14,11 @@ font-family: 'Inconsolata', monospace;
   src: url('./fonts/Moon Light.otf') format("opentype");
 }
 
+@font-face {
+  font-family: 'Rational Light';
+  src: url('./fonts/RationalTWTextDEMO-Light.otf') format("opentype");
+}
+
 body {
   background-color: #F1F1EF;
   color: #D6D6D6;
@@ -65,7 +70,6 @@ h1.brand-logo {
   line-height: 100px;
   font-size: 3.6vw;
   margin-top: 60px;
-  font-family: 'Moon Bold', monospace;
   color: #1B3E61;
 }
 
@@ -88,4 +92,8 @@ footer.page-footer {
 
 .sub-divisor {
   margin: 60px 0px;
+}
+
+.rational {
+  font-family: 'Rational Light', monospace;
 }
