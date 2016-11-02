@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hello, I'm Hector! I'm a Web Developer -- check out my Portfolio.">
 
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -28,12 +30,13 @@
   <!--  Custom CSS -->
   <link rel="stylesheet" type="text/css" href="./styles.css">
 
-  <title>Hector Coronado | Portfolio</title>
+  <title>Hector Coronado | Web Developer Portfolio</title>
 
 </head>
 
 <body>
 
+  <span itemscope itemtype="http://schema.org/Person">
   <header>
     <nav class="top-nav">
       <div class="container">
@@ -50,7 +53,7 @@
       </div>
       <div class="container">
         <div class="nav-wrapper">
-          <h1 class="brand-logo rational">Hector Coronado: Web Developer</h1>
+          <h1 class="brand-logo rational" itemprop="name">Hector Coronado: <span itemprop="jobTitle">Web Developer</span></h1>
         </div>
       </div>
       <ul class="side-nav" id="mobile-demo">
@@ -67,7 +70,7 @@
     <div class="container">
 
       <div class="row" id="about">
-        <div class="col s6 push-s3 m4 push-m8 l3 push-l9"><img class="responsive-img z-depth-1" src="./images/croppedprofilepic.png"></img>
+        <div class="col s6 push-s3 m4 push-m8 l3 push-l9"><img itemprop="image" class="responsive-img z-depth-1" src="./images/croppedprofilepic.png"></img>
         </div>
         <div class="col m6 pull-m4 l8 pull-l3 rational">
           <p class="flow-text">
@@ -80,8 +83,7 @@
             The analytical work I do is balanced by an empathy for the people around me, whether it’s a co-worker, collaborator, or client. Other areas of interest include chess and literature, and a past profession in the coffee industry.
           </p>
           <p class="flow-text">
-            Check out my <a href="Hector Coronado | Front End Developer Resume.pdf" target="_blank">CV</a>.</p>
-
+            Check out my <a href="Hector Coronado | Web Developer Resume.pdf" target="_blank">CV</a>.
           </p>
         </div>
 
@@ -197,6 +199,7 @@
 
     </div>
   </main>
+  </span>
 
   <footer class="page-footer">
     <div class="footer-copyright">
@@ -210,6 +213,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 
