@@ -1,0 +1,13 @@
+@import './base/settings';
+@import './base/base';
+
+// @import url(../../fonts/AndersonGrotesk.otf);
+// @import url(../fonts/AndersonGrotesk.otf);
+
+@font-face 
+  font-family: 'AndersonGroteskRegular'
+  src:
+    local('Anderson Grotesk')
+    local('Anderson-Grotesk')
+    url('/../fonts/AndersonGrotesk.otf')
+    format('opentype')
