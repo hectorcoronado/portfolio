@@ -30,7 +30,9 @@
     "style-loader": "0.18.2",
     "url-loader": "^1.1.2",
     "validator": "8.0.0",
-    "webpack": "3.1.0",
+    "webpack": "3.1.0"
+  },
+  "devDependencies": {
     "webpack-dev-server": "2.5.1"
   },
   "standard": {
@@ -38,6 +40,5 @@
       "/public/scripts/app.js",
       "/public/bundle.js"
     ]
-  },
-  "devDependencies": {}
+  }
 }

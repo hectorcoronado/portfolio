@@ -1,8 +1,4 @@
-# :moneybag: expensify :dollar: :euro: :pound: :yen:
-
-### a repo created to learn React Fiber & React Router v4.
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+# Portfolio
 
 #### From the terminal, run:
 
