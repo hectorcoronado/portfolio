@@ -1,29 +1,28 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import AboutPage from '../components/AboutPage'
 import ContactPage from '../components/ContactPage'
-import Header from '../components/Header'
+import Navigation from '../components/Navigation'
 import HomePage from '../components/HomePage'
 import NotFoundPage from '../components/NotFoundPage'
-import PortfolioItemPage from '../components/PortfolioItemPage'
-import PortfolioSummaryPage from '../components/PortfolioPage'
+import ProjectsPage from '../components/ProjectsPage'
 
 /**
   * / -> home (in nav)
   * /portfolio -> p'folio home page w/links to items (in nav)
-  * /portfolio/:id -> p'folio item page that shows id
   * /contact -> contact page (in nav)
   */
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
-      <Header />
+      <Navigation />
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route path='/about' component={AboutPage} />
         <Route path='/contact' component={ContactPage} />
-        <Route exact path='/portfolio' component={PortfolioSummaryPage} />
-        <Route path='/portfolio/:id' component={PortfolioItemPage} />
+        <Route exact path='/portfolio' component={ProjectsPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
