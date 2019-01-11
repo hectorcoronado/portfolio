@@ -6,6 +6,7 @@ import ContactPage from '../components/ContactPage'
 import Navigation from '../components/Navigation'
 import HomePage from '../components/HomePage'
 import NotFoundPage from '../components/NotFoundPage'
+import PrimaryRectangle from '../components/PrimaryRectangle'
 import ProjectsPage from '../components/ProjectsPage'
 
 /**
@@ -25,6 +26,7 @@ const AppRouter = () => (
         <Route exact path='/portfolio' component={ProjectsPage} />
         <Route component={NotFoundPage} />
       </Switch>
+      <PrimaryRectangle />
     </div>
   </BrowserRouter>
 )

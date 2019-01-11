@@ -22,16 +22,3 @@ button:disabled {
 .is-active {
   font-weight: bold;
 }
-
-.carousel {
-  height: 50%;
-  width: 50%;
-  margin: 0;
-
-  
-  &__image-slide {
-    height: 50px;
-    width: 50px;
-    transition: background-image .3s ease-in-out;
-  }
-}
