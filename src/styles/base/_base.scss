@@ -6,7 +6,7 @@ html {
 
 body {
   background: $white;
-  color: $dark-purple;
+  color: $black;
   font-family: $ibm-plex-mono;
   font-size: $m-size;
 }
@@ -21,4 +21,5 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+  text-decoration: underline;
 }

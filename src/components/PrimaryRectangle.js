@@ -1,10 +1,8 @@
 import React from 'react'
 
-import SecondaryRectangle from './SecondaryRectangle'
-
-const PrimaryRectangle = () => (
+const PrimaryRectangle = props => (
     <div className='primary-rectangle'>
-        <SecondaryRectangle />
+        { props.children }
     </div>
 )
 

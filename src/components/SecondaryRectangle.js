@@ -1,7 +1,9 @@
 import React from 'react'
 
-const SecondaryRectangle = () => (
-    <div className='secondary-rectangle' />
+const SecondaryRectangle = props => (
+    <div className='secondary-rectangle'>
+        { props.children }
+    </div>
 )
 
 export default SecondaryRectangle

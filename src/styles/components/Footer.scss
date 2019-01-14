@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+
+    &__color-bar {
+        border: 1px solid $black;
+        height: 3rem;
+        width: 61.8vw;
+        display: flex;
+
+        &__section {
+            height: 100%;
+            width: 20%;
+
+            &:not(:last-child) {
+                border-right: 1px solid $black;
+            }
+
+            &--green {
+                background: $green;
+            }
+
+            &--burgundy {
+                background: $burgundy;
+            }
+
+            &--dark-blue {
+                background: $dark-blue;
+            }
+
+            &--blue {
+                background: $blue;
+            }
+
+            &--plum {
+                background: $plum;
+            }
+        }
+    }
+}
