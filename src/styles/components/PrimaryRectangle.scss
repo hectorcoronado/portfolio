@@ -1,8 +1,14 @@
 .primary-rectangle {
-    background-color: white;
-    height: 100vw - 61.8vw;
-    width: 61.8vw;
-
+    border: $black-border;
     display: flex;
-    justify-content: flex-end;
+
+    @include for-large-screens-and-up {
+        border-right: none;
+        width: 61.8%;
+    }
+
+    @include for-small-screens-and-down {
+        border-bottom: none;
+        height: 61.8%;
+    }
 }

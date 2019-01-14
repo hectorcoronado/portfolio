@@ -1,0 +1,27 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    @include for-large-screens-and-up {
+        padding: 3rem;
+    }
+
+    @include for-small-screens-and-down {
+        padding: 1.5rem;
+    }
+}
+
+.rectangle-container {
+    display: flex;
+
+    @include for-large-screens-and-up {
+        height: 100vw - 61.8vw;
+        width: 61.8vw;
+    }
+
+    @include for-small-screens-and-down {
+        flex-direction: column;
+        height: 85vh;
+        width: 61.8vw;
+    }
+}

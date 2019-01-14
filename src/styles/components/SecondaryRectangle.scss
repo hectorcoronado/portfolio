@@ -1,7 +1,12 @@
 .secondary-rectangle {
-    background-color: azure;
-    width: 38.2%;
-    height: 100%;
-
+    border: $black-border;
     display: flex;
+
+    @include for-large-screens-and-up {
+        width: 38.2%;
+    }
+
+    @include for-small-screens-and-down {
+        height: 38.2%;
+    }
 }

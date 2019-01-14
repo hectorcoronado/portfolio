@@ -1,8 +1,12 @@
 import React from 'react'
 
+import PrimaryRectangle from './PrimaryRectangle'
+import SecondaryRectangle from './SecondaryRectangle'
+
 const AboutPage = () => (
-    <div>
-        this is the about me page
+    <div className='rectangle-container'>
+        <PrimaryRectangle />
+        <SecondaryRectangle />
     </div>
 )
 

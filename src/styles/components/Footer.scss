@@ -2,18 +2,12 @@
     display: flex;
 
     &__color-bar {
-        border: 1px solid $black;
-        height: 3rem;
         width: 61.8vw;
         display: flex;
 
         &__section {
-            height: 100%;
+            outline: 1px solid $black;
             width: 20%;
-
-            &:not(:last-child) {
-                border-right: 1px solid $black;
-            }
 
             &--green {
                 background: $green;
@@ -34,6 +28,16 @@
             &--plum {
                 background: $plum;
             }
+        }
+
+        @include for-large-screens-and-up {
+            height: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @include for-small-screens-and-down {
+            height: 1rem;
+            margin-top: 1rem;
         }
     }
 }

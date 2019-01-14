@@ -5,8 +5,7 @@ import PrimaryRectangle from './PrimaryRectangle'
 import SecondaryRectangle from './SecondaryRectangle'
 
 const ProjectsPage = () => (
-  <div>
-    this is the projects page
+  <div className='rectangle-container'>
     <PrimaryRectangle>
     </PrimaryRectangle>
     <SecondaryRectangle>

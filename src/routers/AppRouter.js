@@ -11,7 +11,7 @@ import ProjectsPage from '../components/ProjectsPage'
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
+    <div className='main-container'>
       <Navigation />
       <Switch>
         <Route exact path='/' component={HomePage} />
