@@ -24,6 +24,7 @@ $dark-blue-lightened: rgba(24, 39, 96, 0.1);
 $burgundy: rgba(74, 5, 3, 1);
 $burgundy-lightened: rgba(74, 5, 3, 0.1);
 $plum: rgba(96, 10, 74, 1);
+$plum-half-lightened: rgba(96, 10, 74, 0.5);
 $plum-lightened: rgba(96, 10, 74, 0.1);
 
 // greens:
@@ -41,6 +42,7 @@ $large-screen-breakpoint: 901px;
 @mixin for-large-screens-and-up {
     @media (min-width: $large-screen-breakpoint) { @content; }
 }
+$xs-size: 1rem;
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
