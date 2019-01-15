@@ -5,6 +5,8 @@
     @include for-large-screens-and-up {
         border-right: none;
         width: 61.8%;
+        max-height: 50rem;
+        max-width: 50rem;
     }
 
     @include for-small-screens-and-down {

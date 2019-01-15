@@ -19,6 +19,8 @@
     @include for-large-screens-and-up {
         flex: 0 0 61.8vw;
         height: 38.2vw;
+        max-height: 50rem;
+        max-width: 80.9rem;
     }
 
     @include for-small-screens-and-down {

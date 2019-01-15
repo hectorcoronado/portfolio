@@ -4,6 +4,8 @@
 
     @include for-large-screens-and-up {
         width: 38.2%;
+        max-height: 50rem;
+        max-width: 30.9rem;
     }
 
     @include for-small-screens-and-down {
