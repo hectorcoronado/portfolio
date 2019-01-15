@@ -79,6 +79,12 @@
             &:not(:last-child) {
                 border-right: none;
             }
+
+            &:hover,
+            &:focus {
+                color: $plum-half-lightened;
+                font-size: $s-size;
+            }
         }
     }
 
