@@ -1,6 +1,8 @@
 .main-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     @include for-large-screens-and-up {
         padding: 3rem;
@@ -13,15 +15,13 @@
 
 .rectangle-container {
     display: flex;
-
+    
     @include for-large-screens-and-up {
-        height: 100vw - 61.8vw;
-        width: 61.8vw;
+        flex: 0 0 61.8vw;
+        height: 38.2vw;
     }
 
     @include for-small-screens-and-down {
         flex-direction: column;
-        height: 85vh;
-        width: 61.8vw;
     }
 }
