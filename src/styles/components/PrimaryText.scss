@@ -1,0 +1,9 @@
+.primary-text {
+    flex: 0 0 100%;
+
+    @include for-large-screens-and-up {
+    }
+
+    @include for-small-screens-and-down {
+    }
+}

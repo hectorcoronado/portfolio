@@ -1,6 +1,8 @@
 .primary-rectangle {
     border: $black-border;
     display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
 
     @include for-large-screens-and-up {
         border-right: none;
