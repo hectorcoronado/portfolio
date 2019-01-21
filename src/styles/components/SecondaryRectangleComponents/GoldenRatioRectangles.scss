@@ -3,101 +3,94 @@
     outline: $black-border;
 
     &--1 {
-        background-color: $ghost-white;
         height: $full-percentage;
         width: $full-percentage;
     }
 
-    &--2 {
-        background-color: $isabelline-white;
+    // full height rectangles
+    &--2,
+    &--4,
+    &--6,
+    &--8,
+    &--10 {
         @include full-height-rectangle;
     }
 
-    &--3 {
-        background-color: $smoke-white;
+    // pushed right
+    &--4,
+    &--6,
+    &--10 {
+        margin-left: auto;
+    }
+
+    // full width rectangles
+    &--3,
+    &--5,
+    &--7,
+    &--9 {
         @include full-width-rectangle;
     }
-    
+
+    // pushed down
+    &--5,
+    &--9 {
+        margin-top: auto;
+    }
+
+    // grayscale rectangles
+    &--1,
+    &--2,
+    &--3,
+    &--6,
+    &--8,
+    &--9 {
+        background-color: $smoke-white;
+    }
+
     &--4 {
-        background-color: $platinum;
-        margin-left: auto;
-        @include full-height-rectangle;
+        background-color: lighten($turquoise, 30%);
     }
 
     &--5 {
-        background-color: $mustard;
-        margin-top: auto;
-        @include full-width-rectangle;
-    }
-
-    &--6 {
-        background-color: $snow-white;
-        margin-left: auto;
-        @include full-height-rectangle;   
+        background-color: lighten($mustard, 20%);
     }
 
     &--7 {
         background-color: $catsup;
-        @include full-width-rectangle;
-    }
-
-    &--8 {
-        background-color: $magnolia-white;
-        @include full-height-rectangle;
-    }
-
-    &--9 {
-        background-color: $baby-powder-white;
-        margin-top: auto;
-        @include full-width-rectangle;
     }
 
     &--10 {
         background-color: $royal-blue;
-        margin-left: auto;
-        @include full-height-rectangle;
-    
     }
 
     @include for-large-screens-and-up {
-        &--2 {
-            align-self: flex-end;
-            @include full-width-rectangle;
-        }
-
-        &--3 {
-            @include full-height-rectangle;
-        }
-
-        &--4 {
-            @include full-width-rectangle;
-        }
-
-        &--5 {
-            margin-left: auto;
-            @include full-height-rectangle;
-        }
-
-        &--6 {
-            @include full-width-rectangle;
-        }
-
-        &--7 {
-            @include full-height-rectangle;
-        }
-
-        &--8 {
-            margin-top: auto;
-            @include full-width-rectangle;
-        }
-
-        &--9 {
-            margin-left: auto;
-            @include full-height-rectangle;
-        }
-
+        // full width
+        &--2,
+        &--4,
+        &--6,
+        &--8,
         &--10 {
             @include full-width-rectangle;
+        }
+
+        // pushed down
+        &--2,
+        &--8 {
+            margin-top: auto;
+        }
+
+        // full height
+        &--3,
+        &--5,
+        &--7,
+        &--9 {
+            @include full-height-rectangle;
+        }
+
+        // pushed right
+        &--5,
+        &--9 {
+            margin-left: auto;
         }
     }
 }
