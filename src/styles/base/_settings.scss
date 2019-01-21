@@ -16,16 +16,18 @@ $white: #fdffff;
 
 // blues
 $blue: rgba(5, 36, 149, 1);
-$blue-lightened: rgba(5, 36, 149, 0.1);
+$blue-lightened: rgba(5, 36, 149, .1);
+
 $dark-blue: rgba(24, 39, 96, 1);
-$dark-blue-lightened: rgba(24, 39, 96, 0.1);
+$dark-blue-lightened: rgba(24, 39, 96, .3);
 
 // reds:
 $burgundy: rgba(74, 5, 3, 1);
-$burgundy-lightened: rgba(74, 5, 3, 0.1);
+$burgundy-lightened: rgba(74, 5, 3, .1);
+
 $plum: rgba(96, 10, 74, 1);
-$plum-half-lightened: rgba(96, 10, 74, 0.5);
-$plum-lightened: rgba(96, 10, 74, 0.1);
+$plum-half-lightened: rgba(96, 10, 74, .5);
+$plum-lightened: rgba(96, 10, 74, .1);
 
 // greens:
 $green: rgba(8, 74, 56, 1);
@@ -59,3 +61,9 @@ $black-border: 1px solid $black;
 $duration: .2s;
 $distance: .5rem;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+//////////////////
+// GOLDEN RATIO //
+//////////////////
+$sm-side-percentage: 38.2%;
+$full-percentage: 100%;

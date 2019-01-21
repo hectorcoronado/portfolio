@@ -2,9 +2,11 @@
 @import './base/base';
 @import './base/layout';
 
-@import './components/Carousel';
+@import './components/Carousel/Carousel';
 @import './components/Footer';
 @import './components/Navigation';
 @import './components/PrimaryRectangle';
 @import './components/PrimaryText';
 @import './components/SecondaryRectangle';
+@import './components/SecondaryRectangleComponents/GoldenRatioRectangles';
+@import './components/SecondaryText';

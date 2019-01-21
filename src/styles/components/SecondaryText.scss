@@ -1,21 +1,13 @@
-.primary-text {
-    flex: 100%;
+.secondary-text {
+    // flex: 100%;
     font-weight: normal;
 
     @include for-large-screens-and-up {
         // margin-left: 3rem;
-
-        &:first-of-type {
-            // margin-top: 3rem;
-        }
     }
 
     @include for-small-screens-and-down {
         font-size: 1.6rem;
         // margin-left: 1rem;
-
-        &:first-of-type {
-            // margin-top: 1rem;
-        }
     }
 }

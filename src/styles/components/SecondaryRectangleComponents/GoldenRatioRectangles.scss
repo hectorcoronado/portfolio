@@ -1,0 +1,137 @@
+
+
+.rectangle-1 {
+    background-color: $green-lightened;
+    display: flex;
+    height: $full-percentage;
+    width: $full-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-2 {
+    background-color: $burgundy-lightened;
+    display: flex;
+    height: $full-percentage;
+    width: $sm-side-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-3 {
+    background-color: $dark-blue-lightened;
+    display: flex;
+    height: $sm-side-percentage;
+    width: $full-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-4 {
+    background-color: $blue-lightened;
+    margin-left: auto;
+    display: flex;
+    height: $full-percentage;
+    width: $sm-side-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-5 {
+    background-color: $plum-half-lightened;
+    margin-top: auto;
+    display: flex;
+    height: $sm-side-percentage;
+    width: $full-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-6 {
+    background-color: $green;
+    margin-left: auto;
+    display: flex;
+    height: $full-percentage;
+    width: $sm-side-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-7 {
+    background-color: paleturquoise;
+    display: flex;
+    height: $sm-side-percentage;
+    width: $full-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-8 {
+    background-color: pink;
+    display: flex;
+    height: $full-percentage;
+    width: $sm-side-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-9 {
+    background-color: ghostwhite;
+    margin-top: auto;
+    display: flex;
+    height: $sm-side-percentage;
+    width: $full-percentage;
+    outline: 1px solid black;
+}
+
+.rectangle-10 {
+    background-color: red;
+    margin-left: auto;
+    display: flex;
+    height: $full-percentage;
+    width: $sm-side-percentage;
+    outline: 1px solid black;
+}
+
+@include for-large-screens-and-up {
+    .rectangle-2 {
+        align-self: flex-end;
+        height: $sm-side-percentage;
+        width: $full-percentage;
+    }
+
+    .rectangle-3 {
+        height: $full-percentage;
+        width: $sm-side-percentage;
+    }
+
+    .rectangle-4 {
+        height: $sm-side-percentage;
+        width: $full-percentage;
+    }
+
+    .rectangle-5 {
+        margin-left: auto;
+        height: $full-percentage;
+        width: $sm-side-percentage;
+    }
+
+    .rectangle-6 {
+        height: $sm-side-percentage;
+        width: $full-percentage;
+    }
+
+    .rectangle-7 {
+        height: $full-percentage;
+        width: $sm-side-percentage;
+    }
+
+    .rectangle-8 {
+        margin-top: auto;
+        height: $sm-side-percentage;
+        width: $full-percentage;
+    }
+
+    .rectangle-9 {
+        margin-left: auto;
+        height: $full-percentage;
+        width: $sm-side-percentage;
+    }
+
+    .rectangle-10 {
+        height: $sm-side-percentage;
+        width: $full-percentage;
+    }
+}
