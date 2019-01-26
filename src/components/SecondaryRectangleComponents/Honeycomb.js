@@ -1,50 +1,58 @@
 import React, { Component } from 'react'
+import throttle from 'lodash.throttle'
 
 class Honeycomb extends Component {
     constructor () {
         super()
-        this.honeycombContainerRef = React.createRef()
+        this.canvasContainerRef = React.createRef()
         this.honeycombRef = React.createRef()
         this.mousetrailRef = React.createRef()
 
+        this.setWidthAndHeight = this.setWidthAndHeight.bind(this)
+
         this.state = {
-            styles: {
-                height: null,
-                width: null
-            }
+            height: null,
+            width: null
         }
     }
     
-    componentDidMount () {
-        this.drawRectInCanvas()
+    setWidthAndHeight () {
+        this.setState({
+            height: this.canvasContainerRef.current.clientHeight,
+            width: this.canvasContainerRef.current.clientWidth
+        })
     }
     
     drawRectInCanvas () {
-        this.setState({
-            styles: {
-                height: this.honeycombContainerRef.current.clientHeight,
-                width: this.honeycombContainerRef.current.clientWidth
-            }
-        })
-        console.log(this.honeycombContainerRef)
-        // const hCtx = this.honeycombRef.current.getContext('2d')
-        // hCtx.fillRect(5, 5, 200, 200)
+        const hCtx = this.honeycombRef.current.getContext('2d')
+        hCtx.fillRect(0, 0, this.state.width, this.state.height)
+    }
+    
+    componentDidMount() {
+        this.setWidthAndHeight()
+        window.addEventListener('resize', this.setWidthAndHeight)
+    }
+    
+    componentDidUpdate () {
+        this.drawRectInCanvas()
     }
 
-    componentDidUpdate () {}
-
-    componentWillUnmount () {}
+    componentWillUnmount () {
+        window.removeEventListener('resize', this.setWidthAndHeight)
+    }
 
     render () {
         return (
-            <div className='honeycomb-container' ref={this.honeycombContainerRef}>
+            <div className='canvas-container' ref={this.canvasContainerRef}>
                 <canvas
-                    style={this.state.styles}
+                    height={this.state.height}
+                    width={this.state.width}
                     className='honeycomb'
                     ref={this.honeycombRef}
-                    />
+                />
                 <canvas
-                    style={this.state.styles}
+                    height={this.state.height}
+                    width={this.state.width}
                     className='mousetrail'
                     ref={this.mousetrailRef}
                 />

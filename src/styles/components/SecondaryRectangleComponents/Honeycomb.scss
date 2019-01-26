@@ -1,22 +1,11 @@
-.honeycomb-container {
+.canvas-container {
     height: 100%;
     position: relative;
     width: 100%;
     
-    .honeycomb {
-        display: block;
-        // height: 100%;
-        margin: 0 auto;
-        position: absolute;
-        top: 0;
-        // width: 100%;
-    }
-    
+    .honeycomb,
     .mousetrail {
-        // height: 100%;
-        margin: 0 auto;
         position: absolute;
         top: 0;
-        // width: 100%;
     }
 }
