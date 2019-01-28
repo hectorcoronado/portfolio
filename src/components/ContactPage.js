@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Honeycomb from './SecondaryRectangleComponents/Honeycomb'
+import HoneycombContainer from './SecondaryRectangleComponents/HoneycombContainer'
 import PrimaryRectangle from './PrimaryRectangle'
 import SecondaryRectangle from './SecondaryRectangle'
 
@@ -8,7 +8,7 @@ const ContactPage = () => (
   <div className='rectangle-container'>
     <PrimaryRectangle />
     <SecondaryRectangle>
-      <Honeycomb />
+      <HoneycombContainer />
     </SecondaryRectangle>
   </div>
 )
