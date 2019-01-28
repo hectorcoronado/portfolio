@@ -34,11 +34,11 @@ export default class HoneycombContainer extends Component {
     render () {
         return (
             <div className='canvas-container' ref={this.canvasContainerRef}>
-                <HoneycombCanvas
+                <MousetrailCanvas
                     height={this.state.height}
                     width={this.state.width}
                 />
-                <MousetrailCanvas
+                <HoneycombCanvas
                     height={this.state.height}
                     width={this.state.width}
                 />

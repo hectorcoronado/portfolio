@@ -81,7 +81,7 @@ export default class MousetrailCanvas extends Component {
     componentDidMount () {
         this.mousetrailRef.current.addEventListener('mousemove', this.init)
     }
-
+    
     componentWillUnmount() {
         this.mousetrailRef.current.removeEventListener('mousemove', this.init)
     }
