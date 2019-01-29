@@ -8,14 +8,14 @@ class DescriptorsList extends Component {
 
         this.state = {
             descriptors: [
-                'this',
-                'that',
-                'and',
-                'some',
-                'other'
+                'pixel-perfectionist',
+                'attentive',
+                'collaborative',
+                'driven',
+                'dependable'
             ],
             currentDescriptor: 0,
-            animate: null
+            animate: true
         }
 
         this.handleAnimationEnd = this.handleAnimationEnd.bind(this)
@@ -29,7 +29,7 @@ class DescriptorsList extends Component {
                         ? this.state.currentDescriptor += 1 
                         : 0,
                 animate: true
-            })), 2000
+            })), 2100
         )
     }
 
@@ -48,11 +48,14 @@ class DescriptorsList extends Component {
             descriptors
         } = this.state
         return (
-            <DescriptorItem
-                animate={animate}
-                text={descriptors[currentDescriptor]}
-                handleAnimationEnd={this.handleAnimationEnd}
-            />
+            <div className='descriptors'>
+                <h2 className='descriptors__header-text'>i am:</h2>
+                <DescriptorItem
+                    animate={animate}
+                    text={descriptors[currentDescriptor]}
+                    handleAnimationEnd={this.handleAnimationEnd}
+                />
+            </div>
         )
     }
 }
