@@ -29,6 +29,7 @@
         
         @include for-large-screens-and-up {
             width: fit-content;
+            width: -moz-fit-content;
             position: relative;
             &:not(:last-child) {
                 margin-bottom: $s-size;
