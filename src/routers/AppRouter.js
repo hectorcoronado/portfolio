@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer'
 import HomePage from '../components/HomePage'
 import Navigation from '../components/Navigation'
 import NotFoundPage from '../components/NotFoundPage'
-import ProjectsPage from '../components/ProjectsPage'
+import ProjectsPage from '../components/ProjectsPage/ProjectsPage'
 
 const AppRouter = () => (
   <BrowserRouter>
