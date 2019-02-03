@@ -8,6 +8,10 @@
         align-content: stretch;
     }
 
+    &--contact {
+        align-content: space-between;
+    }
+
     @include for-large-screens-and-up {
         border-right: none;
         max-height: 50rem;

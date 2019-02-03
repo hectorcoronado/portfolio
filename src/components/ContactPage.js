@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ContactPageLinks from './ContactPageLinks'
 import HoneycombContainer from './SecondaryRectangleComponents/HoneycombContainer'
 import PrimaryRectangle from './PrimaryRectangle'
 import PrimaryText from './PrimaryText'
@@ -8,13 +9,10 @@ import SecondaryText from './SecondaryText'
 
 const ContactPage = () => (
   <div className='rectangle-container contact-page'>
-    <PrimaryRectangle>
+    <PrimaryRectangle modifier='primary-rectangle--contact'>
       <PrimaryText text='hector coronado' />
-      <a className='contact-page__link contact-page__link--email-link' href='mailto:hectorcoronado.developer@gmail.com'>
-        <SecondaryText text='hectorcoronado.developer@gmail.com' />
-      </a>
-      <a className='contact-page__link contact-page__link--github-link' href='https://github.com/hectorcoronado'><i className='fab fa-github-square'></i></a>
-      <a className='contact-page__link contact-page__link--twitter-link' href='https://twitter.com/HCoronado'><i className='fab fa-twitter-square'></i></a>
+      <SecondaryText text="i'd like to hear from you!" modifier='secondary-text--contact'/>
+      <ContactPageLinks />
     </PrimaryRectangle>
     <SecondaryRectangle>
       <HoneycombContainer />

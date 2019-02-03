@@ -1,14 +1,16 @@
 .secondary-text {
+    font-size: 1.9rem;
     font-weight: normal;
 
     &--about {
         text-align: justify;
     }
 
+    &--contact {
+        flex: 100%;
+    }
+
     @include for-large-screens-and-up {
-        &--about {
-            font-size: 2rem;
-        }
     }
 
     @include for-small-screens-and-down {
