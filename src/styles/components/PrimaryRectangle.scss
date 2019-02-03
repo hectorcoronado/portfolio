@@ -4,16 +4,22 @@
     align-content: flex-start;
     flex-wrap: wrap;
 
+    &--about {
+        align-content: stretch;
+    }
+
     @include for-large-screens-and-up {
         border-right: none;
-        width: 61.8%;
         max-height: 50rem;
         max-width: 50rem;
+        padding: 3rem;
+        width: 61.8%;
     }
 
     @include for-small-screens-and-down {
         border-bottom: none;
         height: 61.8vw;
+        padding: 2rem;
         width: 61.8vw;
     }
 }

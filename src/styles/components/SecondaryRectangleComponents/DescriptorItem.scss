@@ -13,7 +13,9 @@
 }
 
 .descriptors__fading-text {
+    font-size: 2rem;
     opacity: 0;
+    
     &--fade {
         animation: fade 2s ease;
     }

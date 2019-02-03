@@ -1,13 +1,21 @@
 .secondary-text {
-    // flex: 100%;
     font-weight: normal;
 
+    &--about {
+        text-align: justify;
+    }
+
     @include for-large-screens-and-up {
-        // margin-left: 3rem;
+        &--about {
+            font-size: 2rem;
+        }
     }
 
     @include for-small-screens-and-down {
         font-size: 1.6rem;
-        // margin-left: 1rem;
+
+        &--about {
+            font-size: 1rem;
+        }
     }
 }
