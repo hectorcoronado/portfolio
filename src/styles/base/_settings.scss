@@ -66,6 +66,32 @@ $duration: .2s;
 $distance: .5rem;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
+@mixin keyframes( $animationName ) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation ($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
 //////////////////
 // GOLDEN RATIO //
 //////////////////
