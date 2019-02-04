@@ -2,7 +2,7 @@ import React from 'react'
 
 const SecondaryText = props => (
     <h2 className={`secondary-text${props.modifier ? ` ${props.modifier}` : ''}`}>
-        { props.text }
+        {props.text}
     </h2>
 )
 

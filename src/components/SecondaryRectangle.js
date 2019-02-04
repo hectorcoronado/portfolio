@@ -2,7 +2,7 @@ import React from 'react'
 
 const SecondaryRectangle = props => (
     <div className='secondary-rectangle'>
-        { props.children }
+        {props.children}
     </div>
 )
 

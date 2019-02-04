@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ImageSlideArrow = ({ direction, clickFn, glyph }) => (
+const ImageSlideArrow = ({direction, clickFn, glyph}) => (
     <div
         className={`carousel__image-slide-arrow image-slide-arrow--${direction}`}
-        onClick={ clickFn }
+        onClick={clickFn}
     >
-        { glyph }
+        {glyph}
     </div>
 )
 

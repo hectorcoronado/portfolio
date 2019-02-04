@@ -9,7 +9,7 @@ const DescriptorItem = props => (
         animate={props.animate}
         onAnimationEnd={props.handleAnimationEnd}
     >
-        { props.text }
+        {props.text}
     </AnimateOnChange>
 )
 

@@ -31,14 +31,10 @@ const linkItems = links.map(link => {
     )
 })
 
-class ContactPageLinks extends React.Component {
-    render () {
-        return (
-            <div className='contact-page contact-page__links'>
-                {linkItems}
-            </div>
-        )
-    }
-}
+const ContactPageLinks = () => (
+    <div className='contact-page contact-page__links'>
+        {linkItems}
+    </div>
+)
 
 export default ContactPageLinks
