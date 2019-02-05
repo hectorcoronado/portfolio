@@ -12,6 +12,11 @@
         align-content: space-between;
     }
 
+    &--projects {
+        align-items: center;
+        justify-content: space-between;
+    }
+
     @include for-large-screens-and-up {
         border-right: none;
         max-height: 50rem;

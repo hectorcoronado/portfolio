@@ -73,16 +73,16 @@ class ProjectsPage extends React.Component {
         const codeChars = String.fromCharCode(60, 47, 62)
 
         return (
-            <div className = 'rectangle-container'>
-                <PrimaryRectangle>
+            <div className='rectangle-container projects-page'>
+                <PrimaryRectangle modifier='primary-rectangle--projects'>
                     <ImageSlideArrow
                         direction='left'
                         clickFn={this.previousSlide}
                         glyph='&#9664;'
                     />
-                    <div>
+                    <div className='projects-page projects-page__project-name-and-codelink'>
                         <PrimaryText text={project.name} />
-                        <a href={project.gitHubUrl} className = 'github-link'>{codeChars}</a> 
+                        <a href={project.gitHubUrl} className='github-link'>{codeChars}</a> 
                     </div>
                     <TechList techList={project.tech} />
                     <ImageSlideArrow
