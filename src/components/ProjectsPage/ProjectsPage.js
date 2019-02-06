@@ -12,21 +12,21 @@ const projects = [{
         name: 'summvs',
         tech: ['react', 'redux', 'mongoose+mongodb', 'express', 'jwt auth', 'stripe', 'webpack+babel'],
         gitHubUrl: 'https://github.com/hectorcoronado/summvs',
-        imageUrl: "https://cmeimg-a.akamaihd.net/640/clsd/getty/c64f76dc20c246ca88ee180fe4b4b781",
+        imageUrl: '/images/summvs.png',
         projectUrl: 'http://www.summvs.com'
     },
     {
         name: 'anthropogenic thermal maximum',
         tech: ['react', 'openweathermaps api', 'scss', 'foundation', 'express', 'webpack+babel'],
         gitHubUrl: 'https://github.com/hectorcoronado/react-weather',
-        imageUrl: "https://lh3.googleusercontent.com/oxPeODS2m6rYIVbhcQChRtOWEYeGDwbeeeB1cDU2o_WYAVPU61VIgx-_6BAh5gSL8Sw=h900",
+        imageUrl: '/images/anthrothermax.png',
         projectUrl: 'https://anthropogenicthermalmaximum.herokuapp.com/'
     },
     {
         name: 'chronologick',
         tech: ['react', 'scss', 'foundation', 'mocha+karma', 'webpack+babel'],
         gitHubUrl: 'https://github.com/hectorcoronado/react-timer',
-        imageUrl: "https://i0.wp.com/www.universodegatos.com/wp-content/uploads/2017/04/fivfelv7.jpg?resize=582%2C328",
+        imageUrl: '/images/chronologick.png',
         projectUrl: 'https://chronologick.herokuapp.com/'
     }
 ]
@@ -92,7 +92,7 @@ class ProjectsPage extends React.Component {
                     />
                 </PrimaryRectangle>
                 <SecondaryRectangle>
-                    <a href={project.projectUrl}>
+                    <a className='projects-page projects-page__project-image' href={project.projectUrl}>
                         <ImageSlide url={project.imageUrl}/>
                     </a>
                 </SecondaryRectangle>

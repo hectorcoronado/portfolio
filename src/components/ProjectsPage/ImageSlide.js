@@ -2,17 +2,16 @@ import React from 'react'
 
 const ImageSlide = ({url}) => {
     const styles = {
-        backgroundImage: `url(${url})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        width: '100%'
     }
 
     return (
-        <div
+        <img
             className='carousel__image-slide'
             style={styles}
+            src={url}
         >
-        </div>
+        </img>
     )
 }
 
