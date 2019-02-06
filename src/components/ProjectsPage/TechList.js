@@ -6,7 +6,7 @@ import SecondaryText from '../SecondaryText'
 const TechList = props => (
     <div>
         <SecondaryText text='tech stack:' />
-        <ul>{props.techList.map(tech => (<TechItem key={tech} tech={tech} />))}</ul>
+        <ul className='projects-page__tech-list'>{props.techList.map(tech => (<TechItem key={tech} tech={tech} />))}</ul>
     </div>
 )
 

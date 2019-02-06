@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TechItem = props => (
-    <li>{props.tech}</li>
+    <li className='projects-page__tech-item'>{props.tech}</li>
 )
 
 export default TechItem
