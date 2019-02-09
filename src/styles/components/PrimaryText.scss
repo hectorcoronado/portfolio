@@ -3,7 +3,13 @@
     font-weight: normal;
 
     @include for-small-screens-and-down {
-        font-size: 1.6rem;
+        font-size: $m-size;
+    }
+
+    &--project-name {
+        @include for-small-screens-and-down {
+            font-size: $s-size;
+        }
     }
 
     &--project-name {

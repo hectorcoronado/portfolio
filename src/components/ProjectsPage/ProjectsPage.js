@@ -80,9 +80,9 @@ class ProjectsPage extends React.Component {
                         clickFn={this.previousSlide}
                         glyph='&#9664;'
                     />
-                    <div className='projects-page__project-info'>
-                        <PrimaryText text={project.name} modifier='primary-text--project-name'/>
-                        <a href={project.gitHubUrl} className='projects-page__project-info__code-link'>{codeChars}</a> 
+                    <div className='projects-page__project-main-info'>
+                        <PrimaryText text={project.name} modifier='primary-text--project-name' />
+                        <a href={project.gitHubUrl} className='project-main-info__link'>{codeChars}</a> 
                     </div>
                     <TechList techList={project.tech} />
                     <ImageSlideArrow

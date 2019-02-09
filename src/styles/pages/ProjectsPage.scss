@@ -12,6 +12,16 @@
         }
     }
 
+    &__tech-list {
+        list-style: none;
+    }
+
+    &__tech-item {
+        @include for-small-screens-and-down {
+            font-size: $s-size;
+        }
+    }
+
     &__project-image {
         align-self: center;
     }
