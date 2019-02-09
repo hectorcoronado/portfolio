@@ -1,11 +1,30 @@
 .projects-page {
-    &__project-name-and-codelink {
-        flex: 0;
-        margin-right: auto;
-        padding-left: 1rem;
+    &__project-info {
+        &__code-link {
+            color: $turquoise;
+            font-size: calc(.8rem + .4vw);
+            text-decoration: none;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $plum;
+            }
+        }
     }
 
     &__project-image {
         align-self: center;
+    }
+
+    .project-tech {
+        font-size: calc(.8rem + .4vw);
+        &__list {
+            font-size: calc(.8rem + .4vw);
+        }
+        
+        &__list-item {
+            font-size: calc(.8rem + .4vw);
+            list-style: none;
+        }
     }
 }

@@ -9,7 +9,7 @@ import SecondaryText from './SecondaryText';
 class AboutPage extends Component {
     static defaultProps = {
         name: 'hector coronado',
-        aboutText: 'i am a front-end developer at martindale-nolo, where i work with a prodigious team to build fast ui\'s that help people find medical & legal services. i work mostly in javascript/react, & love css. avid runner & amateur film critic.'
+        aboutText: 'i am a front-end developer at martindale-nolo, working mostly in javascript. also love css. i like minimalism, making & thinking about things.'
     }
 
     render () {

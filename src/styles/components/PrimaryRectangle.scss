@@ -4,19 +4,6 @@
     align-content: flex-start;
     flex-wrap: wrap;
 
-    &--about {
-        align-content: stretch;
-    }
-
-    &--contact {
-        align-content: space-between;
-    }
-
-    &--projects {
-        align-items: center;
-        justify-content: space-between;
-    }
-
     @include for-large-screens-and-up {
         border-right: none;
         max-height: 50rem;
@@ -30,5 +17,19 @@
         height: 61.8vw;
         padding: 2rem;
         width: 61.8vw;
+    }
+
+    &--about {
+        align-content: stretch;
+    }
+
+    &--contact {
+        align-content: space-between;
+    }
+
+    &--projects {
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
     }
 }

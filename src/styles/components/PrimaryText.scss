@@ -5,4 +5,10 @@
     @include for-small-screens-and-down {
         font-size: 1.6rem;
     }
+
+    &--project-name {
+        @include for-small-screens-and-down {
+            font-size: calc(1rem + .2vw);
+        }
+    }
 }
