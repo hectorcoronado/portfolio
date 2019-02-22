@@ -1,9 +1,9 @@
 {
-  "name": "expensify",
+  "name": "hector coronado portfolio",
   "version": "1.0.0",
-  "description": "react@16 & react-router-v4 learning",
+  "description": "hector coronado portfolio",
   "main": "index.js",
-  "repository": "https://github.com/hectorcoronado/indecision.git",
+  "repository": "https://github.com/hectorcoronado/portfolio",
   "author": "Hector Coronado",
   "license": "MIT",
   "scripts": {
