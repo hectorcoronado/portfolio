@@ -1,0 +1,18 @@
+@import './base/settings';
+@import './base/base';
+@import './base/layout';
+
+@import './pages/ContactPage';
+@import './pages/ProjectsPage';
+
+@import './components/Carousel/Carousel';
+@import './components/Footer';
+@import './components/Navigation';
+@import './components/PrimaryRectangle';
+@import './components/PrimaryText';
+@import './components/SecondaryRectangle';
+@import './components/SecondaryRectangleComponents/DescriptorItem';
+@import './components/SecondaryRectangleComponents/DescriptorsList';
+@import './components/SecondaryRectangleComponents/GoldenRatioRectangles';
+@import './components/SecondaryRectangleComponents/Honeycomb';
+@import './components/SecondaryText';

@@ -1,0 +1,106 @@
+// defines thematic variables in use throughout app.
+
+///////////
+// FONTS //
+///////////
+$ibm-plex-mono: 'IBM Plex Mono', 'Courier', monospace;
+
+////////////
+// COLORS //
+////////////
+// blues
+$cerulean: #3867f2;
+$royal-blue: rgba(5, 36, 149, 1);
+$sky-blue: #7394b3;
+$turquoise: #4eb9da;
+$midnight: #2b2845;
+
+// reds:
+$burgundy: rgba(74, 5, 3, 1);
+$plum: rgba(96, 10, 74, 1);
+$catsup: #ed1c24;
+
+// greens:
+$moss: rgba(8, 74, 56, 1);
+
+// yellows:
+$mustard: #f3c41b;
+
+//////////////////////
+// GRAYSCALE COLORS //
+//////////////////////
+$black: rgba(2, 6, 35, 1);
+$smoke-white: #f4f5f4;
+$snow-white: #fdfbfa;
+$white: #fdfffd;
+
+////////////////////
+// SPACING/SIZING //
+////////////////////
+$small-screen-breakpoint: 900px;
+@mixin for-small-screens-and-down {
+    @media (max-width: $small-screen-breakpoint) { @content; }
+}
+$large-screen-breakpoint: 901px;
+@mixin for-large-screens-and-up {
+    @media (min-width: $large-screen-breakpoint) { @content; }
+}
+$xs-size: 1rem;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+/////////////////////////
+// BORDERS/BOX SHADOWS //
+/////////////////////////
+$black-border: 1px solid $black;
+$black-box-shadow: .5px .5px .5px 0px rgba(0,0,0,0.75);
+
+
+////////////////
+// ANIMATIONS //
+////////////////
+$duration: .2s;
+$distance: .5rem;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+@mixin keyframes( $animationName ) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation ($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+//////////////////
+// GOLDEN RATIO //
+//////////////////
+$sm-percentage: 38.2%;
+$full-percentage: 100%;
+@mixin full-height-rectangle {
+    height: $full-percentage;
+    width: $sm-percentage;
+}
+@mixin full-width-rectangle {
+    height: $sm-percentage;
+    width: $full-percentage;
+}

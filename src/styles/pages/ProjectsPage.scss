@@ -1,0 +1,54 @@
+.projects-page {
+    .project-main-info__link {
+        color: $turquoise;
+        font-size: calc(.8rem + .4vw);
+        text-decoration: none;
+        transition: color .3s ease-in-out;
+
+        &:hover {
+            color: $plum;
+            cursor: pointer;
+        }
+    }
+
+    &__tech-list {
+        list-style: none;
+    }
+
+    &__tech-item {
+        @include for-small-screens-and-down {
+            font-size: $s-size;
+        }
+    }
+
+    &__project-image {
+        align-self: center;
+    }
+
+    &__project-main-info {
+        @include for-large-screens-and-up {
+            flex: 0 0 20%;
+            font-size: 1rem;
+        }
+
+        @include for-small-screens-and-down {
+            flex: 0;
+        }
+
+    }
+
+    .project-tech {
+        font-size: calc(.8rem + .4vw);
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+        &__list {
+            font-size: calc(.8rem + .4vw);
+        }
+        
+        &__list-item {
+            font-size: calc(.8rem + .4vw);
+            list-style: none;
+        }
+    }
+}

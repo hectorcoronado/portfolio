@@ -1,0 +1,15 @@
+.secondary-rectangle {
+    border: $black-border;
+    display: flex;
+
+    @include for-large-screens-and-up {
+        max-height: 50rem;
+        max-width: 30.9rem;
+        width: 38.2%;
+    }
+
+    @include for-small-screens-and-down {
+        height: 38.2vw;
+        width: 61.8vw;
+    }
+}
