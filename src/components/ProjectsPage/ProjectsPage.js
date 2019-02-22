@@ -16,8 +16,8 @@ const projects = [{
         projectUrl: 'http://www.summvs.com'
     },
     {
-        name: 'anthropogenic thermal maximum',
-        tech: ['react', 'openweathermaps api', 'scss', 'foundation', 'express', 'webpack+babel'],
+        name: 'a·t·m',
+        tech: ['react', 'owm api', 'scss', 'foundation', 'express', 'webpack+babel'],
         gitHubUrl: 'https://github.com/hectorcoronado/react-weather',
         imageUrl: '/images/anthrothermax.png',
         projectUrl: 'https://anthropogenicthermalmaximum.herokuapp.com/'
