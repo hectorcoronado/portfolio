@@ -1,0 +1,22 @@
+.descriptors {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-family: $ibm-plex-mono;
+    justify-content: flex-end;
+
+    
+    
+    &__header-text {
+        font-size: $m-size;
+        font-weight: normal;
+    }
+
+    @include for-large-screens-and-up {
+        margin: 0 3rem 3rem auto;
+    }
+
+    @include for-small-screens-and-down {
+        margin: 0 2rem 2rem auto;
+    }
+}

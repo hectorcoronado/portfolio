@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @include for-large-screens-and-up {
+        flex: 0 0 61.8vw;
+        max-width: 80.9rem;
+    }
+
+    @include for-small-screens-and-down {
+        flex: 0 0 61.8vw;
+    }
+
+    &__color-bar {
+        display: flex;
+
+        &__section {
+            outline: 1px solid $black;
+            width: 20%;
+
+            &--mustard {
+                background: $mustard;
+            }
+
+            &--catsup {
+                background: $catsup;
+            }
+
+            &--turquoise {
+                background: $turquoise;
+            }
+
+            &--midnight {
+                background: $midnight;
+            }
+
+            &--plum {
+                background: $plum;
+            }
+        }
+
+        @include for-large-screens-and-up {
+            height: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @include for-small-screens-and-down {
+            height: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__link {
+        color: $black;
+        font-style: italic;
+        text-decoration: none;
+    }
+}

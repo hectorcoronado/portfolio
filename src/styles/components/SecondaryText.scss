@@ -1,0 +1,23 @@
+.secondary-text {
+    font-size: 1.9rem;
+    font-weight: normal;
+
+    &--about {
+        text-align: justify;
+    }
+
+    &--contact {
+        flex: 100%;
+    }
+
+    @include for-large-screens-and-up {
+    }
+
+    @include for-small-screens-and-down {
+        font-size: 1.6rem;
+
+        &--about {
+            font-size: 1rem;
+        }
+    }
+}

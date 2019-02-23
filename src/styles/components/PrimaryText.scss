@@ -1,0 +1,20 @@
+.primary-text {
+    flex: 100%;
+    font-weight: normal;
+
+    @include for-small-screens-and-down {
+        font-size: $m-size;
+    }
+
+    &--project-name {
+        @include for-small-screens-and-down {
+            font-size: $s-size;
+        }
+    }
+
+    &--project-name {
+        @include for-small-screens-and-down {
+            font-size: calc(1rem + .2vw);
+        }
+    }
+}

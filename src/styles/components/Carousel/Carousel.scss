@@ -1,0 +1,16 @@
+.carousel {
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    
+    &__image-slide {
+        transition: background-image .3s ease-in-out;
+    }
+
+    &__image-slide-arrow {
+        @include for-small-screens-and-down {
+            font-size: 1rem;
+        }
+   
+    }
+}
