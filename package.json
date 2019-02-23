@@ -2,7 +2,7 @@
   "name": "hector-coronado-portfolio",
   "version": "1.0.0",
   "description": "hector coronado portfolio",
-  "main": "src/App.js",
+  "main": "./src/App.js",
   "repository": "https://github.com/hectorcoronado/portfolio",
   "author": "Hector Coronado",
   "license": "MIT",
