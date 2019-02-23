@@ -1,5 +1,5 @@
 {
-  "name": "hector coronado portfolio",
+  "name": "hector-coronado-portfolio",
   "version": "1.0.0",
   "description": "hector coronado portfolio",
   "main": "index.js",
@@ -9,7 +9,9 @@
   "scripts": {
     "build": "webpack",
     "dev-server": "webpack-dev-server --open",
-    "live-server": "live-server public/"
+    "live-server": "live-server public/",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -19,6 +21,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
+    "gh-pages": "^2.0.1",
     "live-server": "^1.2.0",
     "lodash.throttle": "4.1.1",
     "node-sass": "4.5.3",
@@ -41,5 +44,6 @@
       "/public/scripts/app.js",
       "/public/bundle.js"
     ]
-  }
+  },
+  "homepage": "https://hectorcoronado.github.io/portfolio/"
 }
