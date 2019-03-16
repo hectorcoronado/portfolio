@@ -8,3 +8,7 @@ yarn.lock
 
 public/bundle.js
 public/bundle.js.map
+public/certbot-auto
+public/surge.crt
+public/surge.key
+public/surge.pem
