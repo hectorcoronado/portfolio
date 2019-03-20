@@ -18,6 +18,16 @@ $ webpack --watch
 $ yarn run dev-server
 ```
 
+#### deployment:
+```
+$ npm run build
+```
+
+##### ...and then from the public folder
+```
+$ surge --domain https://hectorcoronado.codes
+```
+
 #### https/certbot/letsencrypt/surge:
 
 https://community.letsencrypt.org/t/adding-certbot-ssl-certification-to-custom-domain-on-surge/88241
