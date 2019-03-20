@@ -6,8 +6,28 @@ export default class MousetrailCanvas extends Component {
 
         this.mousetrailRef = React.createRef()
 
+        this.getElementPosition = this.getElementPosition.bind(this)
         this.init = this.init.bind(this)
         this.makeHoney = this.makeHoney.bind(this)
+
+
+        this.state = {
+            hexCx: null,
+            hexCy: null,
+            offsetXPos: null,
+            offsetYPos: null
+        }
+    }
+
+
+    getElementPosition() {
+        const rect = this.mousetrailRef.current.getBoundingClientRect();
+        // console.log(rect)
+
+        this.setState({
+            offsetXPos: rect.x,
+            offsetYPos: rect.y
+        })
     }
 
     makeHoney(mx, my) {
@@ -20,7 +40,9 @@ export default class MousetrailCanvas extends Component {
         const yd = 16
         const xd = 2 * yd * Math.sin(Math.PI / 3)
         const xl = mx % xd
+        console.log('xl', xl)
         const xr = xd - mx % xd
+        console.log('xr', xr)
         const yu = my % (3 * yd)
         const yb = 3 * yd - my % (3 * yd)
         const hlu = Math.sqrt(Math.pow(xl, 2) + Math.pow(yu, 2))
@@ -56,8 +78,13 @@ export default class MousetrailCanvas extends Component {
             }
         }
 
-        console.log(hexCx)
-        console.log(hexCy)
+        console.log('this.state.offsetXPos', this.state.offsetXPos)
+
+        hexCx = hexCx - this.state.offsetXPos
+        hexCy = hexCy - this.state.offsetYPos
+
+        console.log('hexCx', hexCx)
+        // console.log('hexCy', hexCy)
 
         mCtx.moveTo(hexCx - xd, hexCy - yd)
         mCtx.beginPath()
@@ -73,17 +100,27 @@ export default class MousetrailCanvas extends Component {
     }
 
     init(e) {
+        console.log('e.clientX', e.clientX)
+        // console.log('e.clientY', e.clientY)
         let mx = e.clientX
         let my = e.clientY
+
         this.makeHoney(mx, my)
     }
 
     componentDidMount () {
+        this.getElementPosition()
+
         this.mousetrailRef.current.addEventListener('mousemove', this.init)
+        window.addEventListener('resize', this.getElementPosition)
+        window.addEventListener('scroll', this.getElementPosition)
     }
     
     componentWillUnmount() {
         this.mousetrailRef.current.removeEventListener('mousemove', this.init)
+        window.removeEventListener('resize', this.getElementPosition)
+        window.removeEventListener('scroll', this.getElementPosition)
+
     }
 
     render() {

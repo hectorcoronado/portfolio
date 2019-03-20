@@ -11,7 +11,7 @@ export default class HoneycombContainer extends Component {
 
         this.state = {
             height: null,
-            width: null
+            width: null,
         }
     }
     
@@ -24,6 +24,7 @@ export default class HoneycombContainer extends Component {
 
     componentDidMount() {
         this.setWidthAndHeight()
+
         window.addEventListener('resize', this.setWidthAndHeight)        
     }
 

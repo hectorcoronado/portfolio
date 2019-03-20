@@ -9,7 +9,6 @@ export default class HoneycombCanvas extends Component {
         this.drawHoneycomb = this.drawHoneycomb.bind(this)
     }
 
-
     drawHoneycomb() {
         const hCtx = this.honeycombRef.current.getContext('2d')
         const h = hCtx.canvas.height
@@ -17,7 +16,9 @@ export default class HoneycombCanvas extends Component {
         const yd = 16
         const xd = 2 * yd * Math.sin(Math.PI / 3)
         const numHexW = Math.ceil(w / (2 * xd)) + 1
+        console.log('numHexW', numHexW)
         const numHexH = Math.ceil(h / (3 * yd)) + 1
+        console.log('numHexH', numHexH)
 
         hCtx.strokeStyle = 'rgba(2, 6, 35, 1)' // `$black` in _settings.scss
         hCtx.lineWidth = 1
